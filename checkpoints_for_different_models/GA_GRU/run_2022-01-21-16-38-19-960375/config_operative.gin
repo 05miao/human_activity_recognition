@@ -1,0 +1,29 @@
+# Parameters for create_tfrecords:
+# ==============================================================================
+create_tfrecords.window_shift = 125
+create_tfrecords.window_size = 250
+
+# Parameters for load:
+# ==============================================================================
+load.data_dir = '/home/data'
+load.name = 'hapt'
+
+# Parameters for prepare:
+# ==============================================================================
+prepare.batch_size = 250
+prepare.caching = True
+
+# Parameters for sequence_GRU_model:
+# ==============================================================================
+sequence_GRU_model.dropout_rate = 0.5
+
+# Parameters for sequence_LSTM_model:
+# ==============================================================================
+sequence_LSTM_model.dropout_rate = 0.429
+
+# Parameters for Trainer:
+# ==============================================================================
+Trainer.ckpt_interval = 100
+Trainer.learning_rate = 9.895e-05
+Trainer.log_interval = 100
+Trainer.total_steps = 8500
